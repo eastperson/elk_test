@@ -1,0 +1,31 @@
+2021-05-22 09:06:38.664 INFO [  restartedMain] [c.l.LoggingApplication] logStarting (55): Starting LoggingApplication using Java 1.8.0_282 on 192.168.nate.com with PID 25558 (/Users/ep/Project/logging/build/classes/java/main started by ep in /Users/ep/Project/logging)
+2021-05-22 09:06:38.666 INFO [  restartedMain] [c.l.LoggingApplication] logStartupProfileInfo (679): The following profiles are active: production
+2021-05-22 09:06:38.693 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-22 09:06:38.693 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-22 09:06:39.376 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] initialize (108): Tomcat initialized with port(s): 8080 (http)
+2021-05-22 09:06:39.382 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-22 09:06:39.382 INFO [  restartedMain] [o.a.c.c.StandardService] log (173): Starting service [Tomcat]
+2021-05-22 09:06:39.383 INFO [  restartedMain] [o.a.c.c.StandardEngine] log (173): Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-22 09:06:39.421 INFO [  restartedMain] [o.a.c.c.C.[.[.[/]] log (173): Initializing Spring embedded WebApplicationContext
+2021-05-22 09:06:39.422 INFO [  restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] prepareWebApplicationContext (289): Root WebApplicationContext: initialization completed in 728 ms
+2021-05-22 09:06:39.535 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskExecutor] initialize (181): Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-22 09:06:39.623 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskScheduler] initialize (181): Initializing ExecutorService 'taskScheduler'
+2021-05-22 09:06:39.640 INFO [  restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] startServer (58): LiveReload server is running on port 35729
+2021-05-22 09:06:39.650 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Starting ProtocolHandler ["http-nio-8080"]
+2021-05-22 09:06:39.668 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] start (220): Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-22 09:06:39.674 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
+2021-05-22 09:06:39.674 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
+2021-05-22 09:06:39.674 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
+2021-05-22 09:06:39.677 INFO [  restartedMain] [c.l.LoggingApplication] logStarted (61): Started LoggingApplication in 1.288 seconds (JVM running for 1.768)
+2021-05-22 09:07:09.677 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
+2021-05-22 09:07:09.677 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
+2021-05-22 09:07:09.678 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
+2021-05-22 09:07:39.679 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
+2021-05-22 09:07:39.679 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
+2021-05-22 09:07:39.679 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
+2021-05-22 09:08:09.681 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
+2021-05-22 09:08:09.681 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
+2021-05-22 09:08:09.682 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
+2021-05-22 09:08:39.688 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
+2021-05-22 09:08:39.688 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
+2021-05-22 09:08:39.689 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler

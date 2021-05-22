@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 60초마다 설정 파일의 변경을 확인 하여 변경시 갱신 -->
+<configuration scan="true" scanPeriod="60 seconds">
+    <springProfile name="production">
+        <include resource="logback-base.xml"/>
+        <root level="INFO">
+            <appender-ref ref="STDOUT"/>
+            <appender-ref ref="info_log"/>
+            <appender-ref ref="error_log"/>
+            <!--            <appender-ref ref="cloudWatch_info_log"/>-->
+            <!--            <appender-ref ref="cloudWatch_error_log"/>-->
+        </root>
+
+        <logger name="com.frog.admin.api" level="INFO">
+            <appender-ref ref="application_log"/>
+            <!--            <appender-ref ref="cloudWatch_application_log"/>-->
+        </logger>
+
+        <logger name="reqRes_log" level="INFO" additivity="false">
+            <appender-ref ref="reqRes_log"/>
+            <!--            <appender-ref ref="cloudWatch_reqRes_log"/>-->
+        </logger>
+
+        <logger name="slow_query_log" level="INFO" additivity="false">
+            <appender-ref ref="slow_query_log"/>
+        </logger>
+
+    </springProfile>
+</configuration>

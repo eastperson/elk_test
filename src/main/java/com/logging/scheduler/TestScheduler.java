@@ -10,14 +10,14 @@ import org.springframework.stereotype.Component;
 @Slf4j(topic = "aws_log")
 public class TestScheduler {
 
-    private static final Marker CORE_MARKER = MarkerFactory.getMarker("CORE");
+    private static final Marker AWS_MARKER = MarkerFactory.getMarker("AWS");
 
 
     @Scheduled(fixedDelay = 30000)
     public void test(){
 
         log.trace("hello trace scheduler");
-        log.info(CORE_MARKER,"hello aws info scheduler");
+        log.info(AWS_MARKER,"hello aws info scheduler");
         log.debug("hello debug scheduler");
         log.warn("hello warn scheduler");
         log.error("hello error scheduler");

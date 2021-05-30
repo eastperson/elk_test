@@ -1,728 +1,139 @@
-2021-05-22 09:06:38.664 INFO [  restartedMain] [c.l.LoggingApplication] logStarting (55): Starting LoggingApplication using Java 1.8.0_282 on 192.168.nate.com with PID 25558 (/Users/ep/Project/logging/build/classes/java/main started by ep in /Users/ep/Project/logging)
-2021-05-22 09:06:38.666 INFO [  restartedMain] [c.l.LoggingApplication] logStartupProfileInfo (679): The following profiles are active: production
-2021-05-22 09:06:38.693 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-22 09:06:38.693 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-22 09:06:39.376 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] initialize (108): Tomcat initialized with port(s): 8080 (http)
-2021-05-22 09:06:39.382 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-22 09:06:39.382 INFO [  restartedMain] [o.a.c.c.StandardService] log (173): Starting service [Tomcat]
-2021-05-22 09:06:39.383 INFO [  restartedMain] [o.a.c.c.StandardEngine] log (173): Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-22 09:06:39.421 INFO [  restartedMain] [o.a.c.c.C.[.[.[/]] log (173): Initializing Spring embedded WebApplicationContext
-2021-05-22 09:06:39.422 INFO [  restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] prepareWebApplicationContext (289): Root WebApplicationContext: initialization completed in 728 ms
-2021-05-22 09:06:39.535 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskExecutor] initialize (181): Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-22 09:06:39.623 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskScheduler] initialize (181): Initializing ExecutorService 'taskScheduler'
-2021-05-22 09:06:39.640 INFO [  restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] startServer (58): LiveReload server is running on port 35729
-2021-05-22 09:06:39.650 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Starting ProtocolHandler ["http-nio-8080"]
-2021-05-22 09:06:39.668 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] start (220): Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-22 09:06:39.674 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 09:06:39.674 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 09:06:39.674 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 09:06:39.677 INFO [  restartedMain] [c.l.LoggingApplication] logStarted (61): Started LoggingApplication in 1.288 seconds (JVM running for 1.768)
-2021-05-22 09:07:09.677 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 09:07:09.677 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 09:07:09.678 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 09:07:39.679 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 09:07:39.679 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 09:07:39.679 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 09:08:09.681 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 09:08:09.681 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 09:08:09.682 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 09:08:39.688 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 09:08:39.688 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 09:08:39.689 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 12:55:56.238 INFO [  restartedMain] [c.l.LoggingApplication] logStarting (55): Starting LoggingApplication using Java 1.8.0_282 on 192.168.nate.com with PID 66293 (/Users/ep/Project/logging/build/classes/java/main started by ep in /Users/ep/Project/logging)
-2021-05-22 12:55:56.240 INFO [  restartedMain] [c.l.LoggingApplication] logStartupProfileInfo (679): The following profiles are active: production
-2021-05-22 12:55:56.277 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-22 12:55:56.278 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-22 12:55:57.034 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] initialize (108): Tomcat initialized with port(s): 8080 (http)
-2021-05-22 12:55:57.039 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-22 12:55:57.040 INFO [  restartedMain] [o.a.c.c.StandardService] log (173): Starting service [Tomcat]
-2021-05-22 12:55:57.040 INFO [  restartedMain] [o.a.c.c.StandardEngine] log (173): Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-22 12:55:57.085 INFO [  restartedMain] [o.a.c.c.C.[.[.[/]] log (173): Initializing Spring embedded WebApplicationContext
-2021-05-22 12:55:57.085 INFO [  restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] prepareWebApplicationContext (289): Root WebApplicationContext: initialization completed in 807 ms
-2021-05-22 12:55:57.246 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskExecutor] initialize (181): Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-22 12:55:57.351 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskScheduler] initialize (181): Initializing ExecutorService 'taskScheduler'
-2021-05-22 12:55:57.374 INFO [  restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] startServer (58): LiveReload server is running on port 35729
-2021-05-22 12:55:57.386 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Starting ProtocolHandler ["http-nio-8080"]
-2021-05-22 12:55:57.405 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] start (220): Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-22 12:55:57.412 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 12:55:57.412 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 12:55:57.412 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 12:55:57.415 INFO [  restartedMain] [c.l.LoggingApplication] logStarted (61): Started LoggingApplication in 1.552 seconds (JVM running for 2.079)
-2021-05-22 12:56:27.414 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 12:56:27.415 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 12:56:27.415 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 12:56:57.421 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 12:56:57.422 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 12:56:57.422 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 12:57:27.423 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 12:57:27.424 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 12:57:27.424 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 12:57:57.430 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 12:57:57.430 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 12:57:57.431 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 12:58:27.436 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 12:58:27.438 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 12:58:27.438 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 12:58:57.440 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 12:58:57.440 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 12:58:57.441 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 12:59:27.443 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 12:59:27.444 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 12:59:27.444 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 12:59:57.445 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 12:59:57.445 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 12:59:57.446 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:00:27.449 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:00:27.450 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:00:27.450 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:00:57.454 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:00:57.455 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:00:57.455 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:01:27.456 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:01:27.457 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:01:27.457 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:01:57.460 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:01:57.461 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:01:57.461 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:02:27.464 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:02:27.466 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:02:27.466 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:02:57.468 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:02:57.468 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:02:57.468 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:03:27.473 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:03:27.474 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:03:27.474 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:03:57.586 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:03:57.587 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:03:57.587 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:04:27.592 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:04:27.592 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:04:27.592 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:04:57.597 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:04:57.598 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:04:57.598 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:05:27.604 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:05:27.604 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:05:27.604 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:05:57.605 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:05:57.606 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:05:57.606 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:06:27.607 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:06:27.607 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:06:27.608 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:06:57.609 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:06:57.609 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:06:57.609 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:07:27.613 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:07:27.613 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:07:27.613 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:07:57.617 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:07:57.618 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:07:57.618 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:09:29.943 INFO [  restartedMain] [c.l.LoggingApplication] logStarting (55): Starting LoggingApplication using Java 1.8.0_282 on 192.168.nate.com with PID 74461 (/Users/ep/Project/logging/build/classes/java/main started by ep in /Users/ep/Project/logging)
-2021-05-22 13:09:29.946 INFO [  restartedMain] [c.l.LoggingApplication] logStartupProfileInfo (679): The following profiles are active: production
-2021-05-22 13:09:29.987 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-22 13:09:29.987 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-22 13:09:30.842 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] initialize (108): Tomcat initialized with port(s): 8080 (http)
-2021-05-22 13:09:30.849 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:09:30.850 INFO [  restartedMain] [o.a.c.c.StandardService] log (173): Starting service [Tomcat]
-2021-05-22 13:09:30.850 INFO [  restartedMain] [o.a.c.c.StandardEngine] log (173): Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-22 13:09:30.899 INFO [  restartedMain] [o.a.c.c.C.[.[.[/]] log (173): Initializing Spring embedded WebApplicationContext
-2021-05-22 13:09:30.899 INFO [  restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] prepareWebApplicationContext (289): Root WebApplicationContext: initialization completed in 911 ms
-2021-05-22 13:09:31.036 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskExecutor] initialize (181): Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-22 13:09:31.154 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskScheduler] initialize (181): Initializing ExecutorService 'taskScheduler'
-2021-05-22 13:09:31.177 INFO [  restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] startServer (58): LiveReload server is running on port 35729
-2021-05-22 13:09:31.189 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Starting ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:09:31.205 WARN [  restartedMain] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] refresh (591): Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-2021-05-22 13:09:31.205 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskScheduler] shutdown (218): Shutting down ExecutorService 'taskScheduler'
-2021-05-22 13:09:31.206 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskExecutor] shutdown (218): Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-22 13:09:31.208 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Pausing ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:09:31.208 INFO [  restartedMain] [o.a.c.c.StandardService] log (173): Stopping service [Tomcat]
-2021-05-22 13:09:31.213 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Stopping ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:09:31.213 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Destroying ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:09:31.219 INFO [  restartedMain] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] logMessage (136): 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-05-22 13:09:31.235 ERROR [  restartedMain] [o.s.b.d.LoggingFailureAnalysisReporter] report (40): 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2021-05-22 13:10:22.617 INFO [  restartedMain] [c.l.LoggingApplication] logStarting (55): Starting LoggingApplication using Java 1.8.0_282 on 192.168.nate.com with PID 75027 (/Users/ep/Project/logging/build/classes/java/main started by ep in /Users/ep/Project/logging)
-2021-05-22 13:10:22.619 INFO [  restartedMain] [c.l.LoggingApplication] logStartupProfileInfo (679): The following profiles are active: production
-2021-05-22 13:10:22.652 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-22 13:10:22.652 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-22 13:10:23.377 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] initialize (108): Tomcat initialized with port(s): 8080 (http)
-2021-05-22 13:10:23.383 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:10:23.384 INFO [  restartedMain] [o.a.c.c.StandardService] log (173): Starting service [Tomcat]
-2021-05-22 13:10:23.384 INFO [  restartedMain] [o.a.c.c.StandardEngine] log (173): Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-22 13:10:23.428 INFO [  restartedMain] [o.a.c.c.C.[.[.[/]] log (173): Initializing Spring embedded WebApplicationContext
-2021-05-22 13:10:23.428 INFO [  restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] prepareWebApplicationContext (289): Root WebApplicationContext: initialization completed in 775 ms
-2021-05-22 13:10:23.559 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskExecutor] initialize (181): Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-22 13:10:23.663 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskScheduler] initialize (181): Initializing ExecutorService 'taskScheduler'
-2021-05-22 13:10:23.683 INFO [  restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] startServer (58): LiveReload server is running on port 35729
-2021-05-22 13:10:23.695 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Starting ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:10:23.715 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] start (220): Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-22 13:10:23.723 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:10:23.723 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:10:23.723 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:10:23.726 INFO [  restartedMain] [c.l.LoggingApplication] logStarted (61): Started LoggingApplication in 1.421 seconds (JVM running for 2.011)
-2021-05-22 13:24:07.568 INFO [  restartedMain] [c.l.LoggingApplication] logStarting (55): Starting LoggingApplication using Java 1.8.0_282 on 192.168.nate.com with PID 83712 (/Users/ep/Project/logging/build/classes/java/main started by ep in /Users/ep/Project/logging)
-2021-05-22 13:24:07.572 INFO [  restartedMain] [c.l.LoggingApplication] logStartupProfileInfo (679): The following profiles are active: production
-2021-05-22 13:24:07.610 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-22 13:24:07.610 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-22 13:24:08.455 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] initialize (108): Tomcat initialized with port(s): 8080 (http)
-2021-05-22 13:24:08.461 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:24:08.461 INFO [  restartedMain] [o.a.c.c.StandardService] log (173): Starting service [Tomcat]
-2021-05-22 13:24:08.461 INFO [  restartedMain] [o.a.c.c.StandardEngine] log (173): Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-22 13:24:08.508 INFO [  restartedMain] [o.a.c.c.C.[.[.[/]] log (173): Initializing Spring embedded WebApplicationContext
-2021-05-22 13:24:08.509 INFO [  restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] prepareWebApplicationContext (289): Root WebApplicationContext: initialization completed in 898 ms
-2021-05-22 13:24:08.652 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskExecutor] initialize (181): Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-22 13:24:08.766 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskScheduler] initialize (181): Initializing ExecutorService 'taskScheduler'
-2021-05-22 13:24:08.787 INFO [  restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] startServer (58): LiveReload server is running on port 35729
-2021-05-22 13:24:08.799 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Starting ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:24:08.814 WARN [  restartedMain] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] refresh (591): Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-2021-05-22 13:24:08.815 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskScheduler] shutdown (218): Shutting down ExecutorService 'taskScheduler'
-2021-05-22 13:24:08.815 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskExecutor] shutdown (218): Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-22 13:24:08.817 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Pausing ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:24:08.817 INFO [  restartedMain] [o.a.c.c.StandardService] log (173): Stopping service [Tomcat]
-2021-05-22 13:24:08.822 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Stopping ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:24:08.822 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Destroying ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:24:08.828 INFO [  restartedMain] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] logMessage (136): 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-05-22 13:24:08.845 ERROR [  restartedMain] [o.s.b.d.LoggingFailureAnalysisReporter] report (40): 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2021-05-22 13:24:18.872 INFO [  restartedMain] [c.l.LoggingApplication] logStarting (55): Starting LoggingApplication using Java 1.8.0_282 on 192.168.nate.com with PID 83838 (/Users/ep/Project/logging/build/classes/java/main started by ep in /Users/ep/Project/logging)
-2021-05-22 13:24:18.874 INFO [  restartedMain] [c.l.LoggingApplication] logStartupProfileInfo (679): The following profiles are active: production
-2021-05-22 13:24:18.907 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-22 13:24:18.908 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-22 13:24:19.665 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] initialize (108): Tomcat initialized with port(s): 8080 (http)
-2021-05-22 13:24:19.672 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:24:19.672 INFO [  restartedMain] [o.a.c.c.StandardService] log (173): Starting service [Tomcat]
-2021-05-22 13:24:19.673 INFO [  restartedMain] [o.a.c.c.StandardEngine] log (173): Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-22 13:24:19.717 INFO [  restartedMain] [o.a.c.c.C.[.[.[/]] log (173): Initializing Spring embedded WebApplicationContext
-2021-05-22 13:24:19.717 INFO [  restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] prepareWebApplicationContext (289): Root WebApplicationContext: initialization completed in 809 ms
-2021-05-22 13:24:19.853 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskExecutor] initialize (181): Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-22 13:24:19.954 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskScheduler] initialize (181): Initializing ExecutorService 'taskScheduler'
-2021-05-22 13:24:19.974 INFO [  restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] startServer (58): LiveReload server is running on port 35729
-2021-05-22 13:24:19.999 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Starting ProtocolHandler ["http-nio-8080"]
-2021-05-22 13:24:20.021 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] start (220): Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-22 13:24:20.029 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:24:20.029 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:24:20.029 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:24:20.032 INFO [  restartedMain] [c.l.LoggingApplication] logStarted (61): Started LoggingApplication in 1.48 seconds (JVM running for 1.997)
-2021-05-22 13:24:50.032 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:24:50.033 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:24:50.033 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:25:20.039 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:25:20.039 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:25:20.039 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:25:50.041 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:25:50.041 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:25:50.041 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:26:20.043 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:26:20.043 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:26:20.043 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:26:50.044 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:26:50.045 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:26:50.045 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:27:20.046 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:27:20.047 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:27:20.047 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:27:50.049 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:27:50.050 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:27:50.050 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:28:20.060 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:28:20.060 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:28:20.061 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:28:50.072 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:28:50.073 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:28:50.073 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:29:20.084 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:29:20.085 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:29:20.085 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:29:50.089 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:29:50.090 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:29:50.090 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:30:45.046 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:30:45.051 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:30:45.051 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:31:15.045 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:31:15.046 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:31:15.046 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:31:45.051 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:31:45.052 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:31:45.052 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:32:15.065 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:32:15.066 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:32:15.066 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:32:45.068 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:32:45.069 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:32:45.069 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:33:15.071 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:33:15.072 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:33:15.072 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:33:45.077 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:33:45.078 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:33:45.079 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:34:15.081 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:34:15.082 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:34:15.082 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:34:45.086 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:34:45.087 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:34:45.087 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:35:15.093 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:35:15.094 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:35:15.094 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:35:45.100 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:35:45.100 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:35:45.100 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:36:15.106 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:36:15.107 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:36:15.108 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:36:45.109 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:36:45.109 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:36:45.109 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:37:15.114 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:37:15.115 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:37:15.115 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:37:45.119 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:37:45.120 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:37:45.120 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:38:15.122 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:38:15.123 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:38:15.123 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:38:45.127 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:38:45.127 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:38:45.127 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:39:15.133 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:39:15.133 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:39:15.133 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:39:45.141 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:39:45.142 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:39:45.142 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:40:15.146 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:40:15.148 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:40:15.148 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:40:45.154 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:40:45.154 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:40:45.154 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:41:15.159 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:41:15.159 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:41:15.160 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:41:45.161 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:41:45.162 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:41:45.162 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:42:15.164 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:42:15.165 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:42:15.165 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:42:45.168 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:42:45.168 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:42:45.169 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:43:15.173 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:43:15.175 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:43:15.175 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:43:45.179 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:43:45.179 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:43:45.179 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:44:15.181 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:44:15.181 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:44:15.181 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:44:45.186 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:44:45.186 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:44:45.187 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:45:15.190 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:45:15.190 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:45:15.190 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:45:45.184 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:45:45.185 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:45:45.185 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:46:15.181 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:46:15.182 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:46:15.182 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:46:45.186 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:46:45.186 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:46:45.186 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:47:15.187 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:47:15.187 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:47:15.187 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:47:45.193 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:47:45.194 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:47:45.194 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:48:15.199 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:48:15.201 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:48:15.201 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:48:45.204 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:48:45.205 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:48:45.205 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:49:15.210 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:49:15.210 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:49:15.210 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:49:45.216 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:49:45.216 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:49:45.216 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:50:15.222 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:50:15.222 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:50:15.222 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:50:45.228 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:50:45.228 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:50:45.228 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:51:15.231 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:51:15.231 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:51:15.231 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:51:45.235 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:51:45.236 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:51:45.236 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:52:15.242 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:52:15.242 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:52:15.243 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:52:45.247 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:52:45.247 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:52:45.248 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:53:15.253 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:53:15.253 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:53:15.254 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:53:45.259 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:53:45.259 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:53:45.259 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:54:15.264 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:54:15.265 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:54:15.265 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:54:45.267 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:54:45.267 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:54:45.267 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:55:15.270 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:55:15.270 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:55:15.270 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:55:45.272 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:55:45.273 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:55:45.273 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:56:15.278 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:56:15.278 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:56:15.278 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:56:45.284 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:56:45.284 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:56:45.284 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:57:15.290 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:57:15.291 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:57:15.291 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:57:45.294 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:57:45.294 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:57:45.294 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:58:15.299 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:58:15.300 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:58:15.300 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:58:45.304 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:58:45.305 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:58:45.305 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:59:15.307 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:59:15.308 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:59:15.308 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 13:59:45.312 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 13:59:45.313 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 13:59:45.313 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:00:15.317 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:00:15.317 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:00:15.318 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:00:45.307 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:00:45.308 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:00:45.308 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:01:15.303 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:01:15.304 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:01:15.304 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:01:45.304 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:01:45.304 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:01:45.304 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:02:15.305 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:02:15.306 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:02:15.306 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:02:45.308 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:02:45.309 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:02:45.309 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:03:15.313 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:03:15.313 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:03:15.313 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:03:45.317 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:03:45.317 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:03:45.317 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:04:15.321 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:04:15.322 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:04:15.322 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:04:45.327 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:04:45.328 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:04:45.328 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:05:15.332 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:05:15.332 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:05:15.333 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:05:45.338 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:05:45.339 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:05:45.339 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:06:15.345 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:06:15.346 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:06:15.346 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:06:45.351 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:06:45.351 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:06:45.352 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:07:15.357 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:07:15.357 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:07:15.357 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:07:45.361 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:07:45.362 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:07:45.362 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:08:15.364 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:08:15.365 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:08:15.365 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:08:45.366 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:08:45.366 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:08:45.366 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:09:15.371 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:09:15.371 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:09:15.371 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:09:45.376 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:09:45.378 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:09:45.378 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:10:15.383 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:10:15.384 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:10:15.384 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:10:45.385 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:10:45.386 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:10:45.386 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:11:15.392 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:11:15.392 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:11:15.392 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:11:45.395 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:11:45.395 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:11:45.395 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:12:15.399 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:12:15.399 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:12:15.399 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:12:45.404 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:12:45.405 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:12:45.405 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:13:15.411 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:13:15.411 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:13:15.411 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:13:45.413 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:13:45.413 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:13:45.414 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:14:15.417 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:14:15.418 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:14:15.418 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:14:45.420 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:14:45.420 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:14:45.421 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:15:15.423 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:15:15.424 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:15:15.425 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:15:45.431 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:15:45.432 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:15:45.433 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:16:15.438 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:16:15.439 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:16:15.439 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:16:45.443 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:16:45.444 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:16:45.444 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:17:15.448 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:17:15.449 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:17:15.449 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:17:45.452 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:17:45.453 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:17:45.453 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:18:15.458 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:18:15.459 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:18:15.459 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:18:45.464 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:18:45.465 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:18:45.465 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:19:15.469 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:19:15.470 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:19:15.470 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:19:45.472 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:19:45.472 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:19:45.473 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:20:15.476 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:20:15.476 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:20:15.476 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:20:45.480 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:20:45.481 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:20:45.481 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:21:15.483 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:21:15.483 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:21:15.483 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:21:45.484 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:21:45.485 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:21:45.485 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:22:15.491 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:22:15.491 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:22:15.492 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:22:45.495 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:22:45.496 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:22:45.496 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:23:15.497 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:23:15.498 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:23:15.498 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:23:45.503 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:23:45.503 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:23:45.503 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:24:15.508 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:24:15.509 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:24:15.509 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:24:45.513 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:24:45.513 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:24:45.513 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:25:15.514 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:25:15.514 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:25:15.515 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:25:45.519 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:25:45.520 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:25:45.520 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:26:15.526 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:26:15.526 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:26:15.526 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:26:45.528 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:26:45.547 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:26:45.548 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:27:15.550 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:27:15.550 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:27:15.550 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:27:45.556 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:27:45.557 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:27:45.557 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:28:15.563 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:28:15.563 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:28:15.563 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:28:45.565 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:28:45.566 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:28:45.566 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:29:15.569 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:29:15.570 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:29:15.570 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:29:45.575 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:29:45.576 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:29:45.576 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:30:15.579 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:30:15.580 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:30:15.580 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:30:45.610 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:30:45.610 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:30:45.610 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:31:15.625 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:31:15.626 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:31:15.626 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:31:45.632 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:31:45.633 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:31:45.633 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:32:15.638 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:32:15.639 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:32:15.639 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:32:45.643 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:32:45.645 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:32:45.645 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:33:15.651 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:33:15.652 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:33:15.652 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:33:45.657 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:33:45.659 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:33:45.659 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:34:15.665 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:34:15.665 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:34:15.665 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:34:45.671 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:34:45.671 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:34:45.671 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:35:15.673 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:35:15.673 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:35:15.673 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:35:45.678 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:35:45.679 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:35:45.679 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:36:15.681 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:36:15.682 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:36:15.682 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:36:45.683 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:36:45.683 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:36:45.683 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:37:15.685 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:37:15.685 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:37:15.685 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:37:45.686 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:37:45.687 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:37:45.687 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:38:15.691 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:38:15.692 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:38:15.692 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:38:45.698 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:38:45.698 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:38:45.698 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:39:15.699 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:39:15.700 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:39:15.700 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:39:45.706 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:39:45.706 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:39:45.706 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:40:15.708 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:40:15.708 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:40:15.708 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:40:45.713 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:40:45.713 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:40:45.713 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:41:15.715 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:41:15.716 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:41:15.716 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:41:45.722 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:41:45.722 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:41:45.723 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:42:15.724 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:42:15.725 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:42:15.725 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:42:45.729 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:42:45.729 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:42:45.730 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:43:15.733 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:43:15.734 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:43:15.734 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:43:45.735 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:43:45.736 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:43:45.736 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:44:15.738 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:44:15.738 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:44:15.738 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:44:45.744 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:44:45.745 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:44:45.745 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:45:15.749 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:45:15.749 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:45:15.749 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:45:45.740 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:45:45.740 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:45:45.740 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:46:15.741 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:46:15.745 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:46:15.745 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
-2021-05-22 14:46:45.746 INFO [   scheduling-1] [c.l.s.TestScheduler] test (16): hello info scheduler
-2021-05-22 14:46:45.746 WARN [   scheduling-1] [c.l.s.TestScheduler] test (18): hello warn scheduler
-2021-05-22 14:46:45.746 ERROR [   scheduling-1] [c.l.s.TestScheduler] test (19): hello error scheduler
+2021-05-30 14:28:13.893 ERROR [  restartedMain] [o.s.b.SpringApplication] reportFailure (871): Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [ca.pjer.logback.AwsLogsAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@40:70 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [aws_log]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:327)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:281)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:375)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.logging.LoggingApplication.main(LoggingApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [ca.pjer.logback.AwsLogsAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@40:70 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [aws_log]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:312)
+	... 23 common frames omitted
+2021-05-30 14:29:14.048 ERROR [  restartedMain] [o.s.b.SpringApplication] reportFailure (871): Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [ca.pjer.logback.AwsLogsAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@40:70 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [aws_log]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:327)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:281)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:375)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.logging.LoggingApplication.main(LoggingApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [ca.pjer.logback.AwsLogsAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@40:70 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [aws_log]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:312)
+	... 23 common frames omitted
+2021-05-30 14:31:02.690 ERROR [  restartedMain] [o.s.b.SpringApplication] reportFailure (871): Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [ca.pjer.logback.AwsLogsAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@40:70 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [aws_log]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:327)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:281)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:375)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.logging.LoggingApplication.main(LoggingApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [ca.pjer.logback.AwsLogsAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@40:70 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ca.pjer.logback.AwsLogsAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [aws_log]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:312)
+	... 23 common frames omitted
+2021-05-30 14:35:59.553 INFO [  restartedMain] [c.l.LoggingApplication] logStarting (55): Starting LoggingApplication using Java 1.8.0_282 on 192.168.nate.com with PID 72517 (/Users/ep/Project/logging/build/classes/java/main started by ep in /Users/ep/Project/logging)
+2021-05-30 14:35:59.556 INFO [  restartedMain] [c.l.LoggingApplication] logStartupProfileInfo (679): The following profiles are active: production
+2021-05-30 14:35:59.599 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-30 14:35:59.599 INFO [  restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] logTo (255): For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-30 14:36:00.441 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] initialize (108): Tomcat initialized with port(s): 8080 (http)
+2021-05-30 14:36:00.448 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 14:36:00.449 INFO [  restartedMain] [o.a.c.c.StandardService] log (173): Starting service [Tomcat]
+2021-05-30 14:36:00.449 INFO [  restartedMain] [o.a.c.c.StandardEngine] log (173): Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-30 14:36:00.500 INFO [  restartedMain] [o.a.c.c.C.[.[.[/]] log (173): Initializing Spring embedded WebApplicationContext
+2021-05-30 14:36:00.500 INFO [  restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] prepareWebApplicationContext (289): Root WebApplicationContext: initialization completed in 900 ms
+2021-05-30 14:36:00.638 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskExecutor] initialize (181): Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 14:36:00.794 INFO [  restartedMain] [o.s.s.c.ThreadPoolTaskScheduler] initialize (181): Initializing ExecutorService 'taskScheduler'
+2021-05-30 14:36:00.828 INFO [  restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] startServer (58): LiveReload server is running on port 35729
+2021-05-30 14:36:00.843 INFO [  restartedMain] [o.a.c.h.Http11NioProtocol] log (173): Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 14:36:00.865 INFO [  restartedMain] [o.s.b.w.e.t.TomcatWebServer] start (220): Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 14:36:00.877 INFO [  restartedMain] [c.l.LoggingApplication] logStarted (61): Started LoggingApplication in 1.791 seconds (JVM running for 2.439)

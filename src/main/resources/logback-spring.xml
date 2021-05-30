@@ -25,5 +25,9 @@
             <appender-ref ref="slow_query_log"/>
         </logger>
 
+        <logger name="aws_log" level="INFO" additivity="false">
+            <appender-ref ref="aws_log"/>
+        </logger>
+
     </springProfile>
 </configuration>

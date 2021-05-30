@@ -37,6 +37,25 @@
         </rollingPolicy>
     </appender>
 
+    <appender name="aws_log" class="ca.pjer.logback.AwsLogsAppender">
+        <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+            <evaluator class="ch.qos.logback.classic.boolex.OnMarkerEvaluator">
+                <marker>AWS</marker>
+            </evaluator>
+            <OnMatch>ACCEPT</OnMatch>
+            <OnMismatch>DENY</OnMismatch>
+        </filter>
+        <layout>
+            <pattern>[%marker] %d{yyyy-MM-dd HH:mm:ss.SSS} %m%n</pattern>
+        </layout>
+        <logGroupName>aws_log</logGroupName>
+        <logStreamName>${hostname}-aws_log</logStreamName>
+        <logRegion>ap-northeast-2</logRegion>
+        <maxBatchLogEvents>50</maxBatchLogEvents>
+        <maxFlushTimeMillis>30000</maxFlushTimeMillis>
+        <maxBlockTimeMillis>5000</maxBlockTimeMillis>
+    </appender>
+
     <appender name="reqRes_log" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
